@@ -2,10 +2,6 @@
   background-color: #fff5f6;
 }
 
-.about-container {
-  padding: 40px 20px;
-}
-
 .about-section__pre-title {
   font-family: 'Titan One';
   font-size: 30px;
@@ -28,17 +24,27 @@
   color: #d41443;
 
   margin-bottom: 32px;
+
+  @include tab {
+    margin-bottom: 40px;
+  }
+
+  @include desk {
+    margin-bottom: 79px;
+  }
 }
 
 .about__wrap {
-  @media screen and (min-width: 768px) {
+  @include tab {
     display: flex;
     width: calc((100% - 64px) / 2);
   }
 }
 
 .about__img {
-  margin-bottom: 40px;
+  @include tel-max {
+    margin-bottom: 40px;
+  }
 }
 
 .about-section__tagline {
@@ -49,6 +55,10 @@
   color: #000000;
 
   margin-bottom: 40px;
+
+  @include desk {
+    margin-bottom: 32px;
+  }
 }
 
 .about-section__description {

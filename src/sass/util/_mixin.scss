@@ -1,25 +1,42 @@
 @mixin tel {
-    @media screen and (min-width:480px){
-        @content
+    @media screen and (min-width:480px) {
+        @content;
     }
 }
+
 @mixin tel-max {
-    @media screen and (max-width:767px){
-        @content
+    @media screen and (max-width:767px) {
+        @content;
     }
 }
+
 @mixin tab {
-    @media screen and (min-width:768px){
-        @content
+    @media screen and (min-width:768px) {
+        @content;
     }
 }
+
 @mixin tab-max {
-    @media screen and (max-width:1199px){
-        @content
+    @media screen and (max-width:1199px) {
+        @content;
     }
 }
+
 @mixin desk {
-    @media screen and (min-width:1200px){
-        @content
+    @media screen and (min-width:1200px) {
+        @content;
     }
+}
+
+@mixin font($fw, $fs, $lh, $ls) {
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: ($lh / $fs);
+    letter-spacing: $ls;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

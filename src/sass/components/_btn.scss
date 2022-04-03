@@ -49,3 +49,83 @@
     text-transform: uppercase;
   }
 }
+
+//  !button-contacts
+
+.btn-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 54px;
+
+  @include tab {
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 81px;
+  }
+
+  @include desk {
+    margin-top: 86px;
+  }
+}
+
+.btn {
+  height: 44px;
+  // width: 161px;
+  border: none;
+  border-radius: 22px;
+  // padding: 0 35px;
+  padding: 0 17px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include tab {
+    padding: 0 30px;
+    min-width: 161px;
+    justify-content: flex-start;
+  }
+
+  // .btn--red
+
+  &--red {
+    background: #d41342;
+    color: #ffffff;
+
+    &:hover,
+    &:focus {
+      background: #c7133e;
+    }
+  }
+
+  // .btn--white
+
+  &--white {
+    color: #d41443;
+    background-color: #ffffff;
+    min-width: 161px;
+
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+    }
+  }
+
+  &-svg {
+    width: 9px;
+    height: 16px;
+    margin-left: 8px;
+
+    @include tab {
+      margin-left: 13px;
+    }
+  }
+}

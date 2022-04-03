@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/*
+ * Главный файл стилей.
+ * Все паршалы подключаются сюда.
+ */
+:root {
+  --current-color-active-link:#D41443;
+  --btn-dark-color: #ffffff;
+  --btn-dark-bg-color: #d41443;
+  --btn-light-color: #d41443;
+  --btn-light-bg-color: #ffffff;
+  --btn-dark-hover-bg-color: #c7133e;
+  --btn-light-hover-bg-color: #ecebeb;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.current {
+  color: var(--current-color-active-link);
+}
+
+container-desk {
+  max-width: 1280px;
+  padding-left: 115px;
+  padding-right: 115px;
+  margin: 0 auto;
+}
+
+container-tab {
+  min-width: 320px;
+  max-width: 480px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+conteiner-mob {
+  max-width: 1280px;
+  padding-left: 115px;
+  padding-right: 115px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+/*# sourceMappingURL=main.css.map */

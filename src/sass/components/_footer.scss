@@ -104,6 +104,10 @@
   }
 }
 
+.footer__contact {
+  margin-right: 3px;
+}
+
 .footer__contact .footer__contact-link {
   @include font(700, 12px, 22px, 0.04em);
 

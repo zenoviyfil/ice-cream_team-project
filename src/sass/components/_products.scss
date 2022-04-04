@@ -152,11 +152,14 @@
 
 .card__title::after {
     position: absolute;
-    top: 200px;
+    top: 210px;
     left: 50%;
     transform: translateX(-50%);
-    content: url(../images/products/points-group.png);
+    content: "";
+    background-image: url(../images/products/points-group.png);
     display: block;
+    width: 26px;
+    height: 6px;
 
 }
 
@@ -165,7 +168,11 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .card__title::after {
-    content: url(../images/products/points-group-2x.png);
+        content: "";
+    background-image: url(../images/products/points-group-2x.png);
+    background-size: contain;
+    width: 26px;
+    height: 6px;
     }
 }
 
@@ -189,12 +196,14 @@
     display: block;
 
     @media screen and (min-width: 768px) {
+        background-image: url(../images/products/icecream-tab.png);
         top: -105px;
         width: 220px;
         height: 226px;
     }
 
     @media screen and (min-width: 1200px) {
+        background-image: url(../images/products/icecream-desk.png);
         top: -210px;
         width: 335px;
         height: 335px;
@@ -208,6 +217,8 @@
 (min-resolution: 2dppx) {
     .ice-cream::before {
         background-image: url(../images/products/icecream-mob-2x.png);
+        background-image: url(../images/products/icecream-tab-2x.png);
+        background-image: url(../images/products/icecream-desk-2x.png);
     }
 }
 
@@ -231,12 +242,14 @@
     display: block;
 
     @media screen and (min-width: 768px) {
+        background-image: url(../images/products/icecoffee-tab.png);
         top: -105px;
         width: 220px;
         height: 226px;
     }
 
     @media screen and (min-width: 1200px) {
+        background-image: url(../images/products/icecoffee-desk.png);
         top: -210px;
         width: 335px;
         height: 335px;
@@ -272,12 +285,14 @@
     display: block;
 
     @media screen and (min-width: 768px) {
+        background-image: url(../images/products/milkshakes-tab.png);
         top: -105px;
         width: 220px;
         height: 226px;
     }
 
     @media screen and (min-width: 1200px) {
+        background-image: url(../images/products/milkshakes-desk.png);
         top: -210px;
         width: 335px;
         height: 335px;
@@ -344,7 +359,10 @@
     height: 40px;
     left: 50%;
     transform: translateX(-50%);
-    content: url(../images/products/arrow-right.png);
+    content: "";
+    // content: url(../images/products/arrow-right.png);
+    background-image: url(../images/products/arrow-right.png);
+    background-size: contain;
     display: block;
 }
 
@@ -353,7 +371,12 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .products-details__summary::before {
-        content: url(../images/products/arrow-right-2x.png);
+    content: "";
+        // content: url(../images/products/arrow-right-2x.png);
+    background-image: url(../images/products/arrow-right-2x.png);
+    // background-size: contain;
+    // width: 40px;
+    // height: 40px;
     }
 }
 

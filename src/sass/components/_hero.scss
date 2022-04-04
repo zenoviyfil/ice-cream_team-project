@@ -1,18 +1,56 @@
 .header-hero {
   background-color: #ffb8ca;
-  width: 100vw;
-  padding-top: 38px;
 }
+
+.container-hero {
+@media screen and (min-width: 1200px) {
+  height: 665px;
+  background-image: url(../images/header-and-hero/icecream-desk.png),
+  url(../images/header-and-hero/girl-desk.png),
+  url(../images/header-and-hero/ellipse-desk.png),
+  url(../images/header-and-hero/16cafes-desk.png),
+  url(../images/header-and-hero/group23-desk.png),
+  url(../images/header-and-hero/milk-desk.png);
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 415px,
+  bottom 0px right 69px,
+  bottom 77px right 228px,
+  bottom 432px right 57px,
+  bottom 341px right 57px,
+  bottom 45px right 975px;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/header-and-hero/icecream-desk-2x.png),
+      url(../images/header-and-hero/girl-desk-2x.png),
+      url(../images/header-and-hero/ellipse-desk-2x.png),
+      url(../images/header-and-hero/16cafes-desk-2x.png),
+      url(../images/header-and-hero/group23-desk-2x.png),
+      url(../images/header-and-hero/milk-desk-2x.png);
+    ;
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 415px,
+    bottom 0px right 69px,
+    bottom 77px right 228px,
+    bottom 432px right 57px,
+    bottom 341px right 57px,
+    bottom 45px right 975px;
+  }
+}
+}
+
 
 .header__bar {
   @media screen and (min-width: 1200px) {
     display: flex;
     position: relative;
     align-items: center;
+    padding-top: 38px;
 
     .header__logo {
       position: absolute;
-      top: 0px;
+      top: 38px;
       left: -69px;
     }
   }
@@ -31,7 +69,7 @@
 
       &:last-child {
         margin-right: 0px;
-      }
+      } 
     }
 
     .header__nav-link {
@@ -46,7 +84,25 @@
 }
 
 .btn-header {
-  align-self: flex-end;
+  @media screen and (min-width: 1200px){
+    @include font(700, 16px, 21px, 0.04em);
+    width: 159px;
+    height: 44px;
+    padding: 11px 37px;
+    text-align: start;
+  }
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    top: 17px;
+    left: 118px;
+    background-image: url(../images/header-and-hero/vector.png);
+    background-repeat: no-repeat;
+  }
 }
 
 .hero__theme {
@@ -60,6 +116,45 @@
       font-family: 'Titan One';
       @include font(400, 58px, 52px, 0.04em);
       color: var(--btn-dark-bg-color);
+    }
+
+    
+  }
+}
+
+.hero__btns {
+  @media screen and (min-width: 1200px) {
+  margin-top: 25px;
+
+    .btn-main {
+    margin-right: 15px;
+
+      &:last-child {
+      margin-right: 0px;
+      }
+    }
+  }
+}
+
+.description {
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin-top: 112px;
+    margin-left: 180px;
+
+    .description__text {
+      font-family: 'DM Sans';
+      @include font(400, 14px, 20px, 0.04em);
+      color: var(--btn-light-bg-color);
+    }
+
+    .description__btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: none;
+      margin-top: 20px;
+      padding: 0;
     }
   }
 }

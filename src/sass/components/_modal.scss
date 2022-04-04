@@ -100,3 +100,109 @@
   }
   transition: border-color 250ms linear;
 }
+
+// !modal-map
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: transform 250ms linear, opacity 250ms linear, visibility 250ms linear;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  // opacity: 0;
+  // pointer-events: none;
+}
+
+// .modal-container.show {
+//   opacity: 1;
+//   pointer-events: auto;
+// }
+
+.modal-map {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid tomato;
+}
+
+.map-btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.map {
+  display: block;
+  max-width: 100%;
+}
+
+.modal-franchise {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff5f6;
+  width: 650px;
+  height: 450px;
+  border-radius: 10px;
+
+  &__title {
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.75;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+
+    color: #d41443;
+  }
+
+  &__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+}
+
+.form-title {
+  font-family: 'Titan One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.75;
+  letter-spacing: 0.04em;
+  color: #d41443;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.subform {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  &__input {
+    border: none;
+    border-bottom: 1px solid tomato;
+    background-color: transparent;
+    outline: none;
+    padding-left: 10px;
+
+    &::placeholder {
+      color: #d41443;
+    }
+  }
+}

@@ -1,0 +1,263 @@
+.contacts {
+  background-image: linear-gradient(#ffffff 84px, #fff5f6 84px);
+
+  @include tab {
+    background-image: linear-gradient(#ffffff 78px, #fff5f6 78px);
+  }
+
+  @include desk {
+    background-image: url(../images/contacts/sectionbg.png),
+      linear-gradient(#ffffff 102px, #fff5f6 102px);
+    background-position: center;
+    background-size: 1900px, 10000px;
+    background-repeat: no-repeat, no-repeat;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/contacts/sectionbg2x.png),
+        linear-gradient(#ffffff 102px, #fff5f6 102px);
+      background-position: center;
+      background-size: 1900px, 10000px;
+      background-repeat: no-repeat, no-repeat;
+    }
+  }
+
+  // .contacts__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @include tab {
+      // gap: 20px;
+    }
+
+    @include desk {
+      gap: 30px;
+    }
+  }
+
+  // .contacts__item
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 43px 20px;
+    // width: calc((100% - 60px) / 3);
+    width: 220px;
+    margin: 0 auto;
+
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+
+    @include tab {
+      padding: 50px 31px;
+      gap: 30px;
+      width: calc((100% - 40px) / 3);
+    }
+
+    @include desk {
+      padding: 51px 43px 62px 43px;
+      gap: 32px;
+      width: calc((100% - 60px) / 3);
+    }
+  }
+
+  // .contacts__title
+
+  &__title {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    // padding: 4px 17px;
+    text-transform: uppercase;
+    padding: 0 24px;
+
+    color: #ffffff;
+    background: #f0d1a5;
+    border-radius: 6px;
+
+    &--green {
+      background-color: #c2e297;
+    }
+
+    @include tab {
+      padding: 4px 17px;
+      font-size: 16px;
+    }
+  }
+
+  // .contacts__city
+
+  &__city {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+
+    color: #000000;
+
+    @include tab {
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    @include desk {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  // .contacts__text
+
+  &__text {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #907e82;
+
+    @include tab {
+      font-size: 14px;
+      line-height: 166%;
+    }
+
+    @include desk {
+      font-size: 16px;
+      line-height: 183%;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  // .contacts__work-time
+
+  &__work-time {
+    &::after {
+      content: '';
+      display: block;
+      margin-top: 25px;
+      height: 1px;
+      // width: 234px;
+      background-color: #e1e1e1;
+
+      @include tab {
+        width: 153px;
+        margin-top: 30px;
+      }
+
+      @include desk {
+        width: 234px;
+        margin-top: 32px;
+      }
+    }
+
+    &::before {
+      content: '';
+      display: block;
+      margin-bottom: 25px;
+      height: 1px;
+      // width: 234px;
+      background-color: #e1e1e1;
+
+      @include tab {
+        width: 153px;
+        margin-bottom: 30px;
+      }
+
+      @include desk {
+        width: 234px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  // .contacts__work-time-margins
+
+  &__work-time-margins:not(:last-child) {
+    margin-bottom: 10px;
+
+    @include tab {
+      margin-bottom: 16px;
+    }
+
+    @include desk {
+      margin-bottom: 15px;
+    }
+  }
+
+  // .contacts__work-time-days
+
+  &__work-time-days {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    // letter-spacing: 0.04em;
+
+    color: #000000;
+
+    @include tab {
+      font-size: 14px;
+    }
+
+    @include desk {
+      font-size: 16px;
+      letter-spacing: 0.04em;
+    }
+  }
+
+  // .contacts__work-time-hours
+
+  &__work-time-hours {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: #ffa5ba;
+
+    @include tab {
+      font-size: 14px;
+    }
+
+    @include desk {
+      font-size: 16px;
+    }
+  }
+
+  // .contacts__links-tel
+
+  &__links-tel,
+  &__links-mail {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 150%;
+    color: #907e82;
+    text-decoration: none;
+
+    @include tab {
+      font-size: 14px;
+      line-height: 183%;
+    }
+
+    @include desk {
+      font-size: 16px;
+      line-height: 183%;
+    }
+  }
+}

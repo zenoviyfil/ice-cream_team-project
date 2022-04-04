@@ -1,0 +1,65 @@
+.header-hero {
+  background-color: #ffb8ca;
+  width: 100vw;
+  padding-top: 38px;
+}
+
+.header__bar {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .header__logo {
+      position: absolute;
+      top: 0px;
+      left: -69px;
+    }
+  }
+}
+
+.header__nav-list {
+  @media screen and (min-width: 1200px) {
+    font-family: 'DM Sans';
+    @include font(700, 16px, 21px, 0.04em);
+    display: flex;
+    margin-left: auto;
+    margin-right: 109px;
+
+    .header__nav-item {
+      margin-right: 35px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+
+    .header__nav-link {
+      color: var(--btn-light-bg-color);
+
+      &:hover,
+      &:focus {
+        color: var(--current-color-active-link);
+      }
+    }
+  }
+}
+
+.btn-header {
+  align-self: flex-end;
+}
+
+.hero__theme {
+  @media screen and (min-width: 1200px) {
+    width: 277px;
+    font-family: 'Titan One';
+    @include font(400, 38px, 44px, 0.04em);
+    margin-top: 84px;
+
+    .colorized {
+      font-family: 'Titan One';
+      @include font(400, 58px, 52px, 0.04em);
+      color: var(--btn-dark-bg-color);
+    }
+  }
+}

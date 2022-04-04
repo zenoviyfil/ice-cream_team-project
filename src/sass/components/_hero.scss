@@ -1,0 +1,468 @@
+.header-hero {
+  background-color: #ffb8ca;
+}
+
+.container-hero {
+  @media screen and (min-width: 320px) {
+    height: 502px;
+    background-image: url(../images/header-and-hero/icecream-mob.png),
+    url(../images/header-and-hero/ellipse-mob.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 32px,
+    bottom 75px right 0px;
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/header-and-hero/icecream-mob-2x.png),
+        url(../images/header-and-hero/ellipse-mob-2x.png);
+      ;
+      background-repeat: no-repeat;
+      background-position: bottom 0px right 247px,
+        bottom 46px right 137px;
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    height: 502px;
+    background-image: url(../images/header-and-hero/icecream-mob.png),
+      url(../images/header-and-hero/ellipse-mob.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 32px,
+      bottom 75px right 0px;
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/header-and-hero/icecream-mob-2x.png),
+        url(../images/header-and-hero/ellipse-mob-2x.png);
+      ;
+      background-repeat: no-repeat;
+      background-position: bottom 0px right 247px,
+        bottom 46px right 137px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    height: 399px;
+    background-image: url(../images/header-and-hero/icecream-tab.png),
+      url(../images/header-and-hero/girl-tab.png),
+      url(../images/header-and-hero/ellipse-tab.png),
+      url(../images/header-and-hero/16cafes-tab.png),
+      url(../images/header-and-hero/group23-tab.png),
+      url(../images/header-and-hero/milk-tab.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 247px,
+      bottom 0px right 34px,
+      bottom 46px right 137px,
+      bottom 261px right 34px,
+      bottom 205px right 34px,
+      bottom 28px right 610px;
+    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/header-and-hero/icecream-tab-2x.png),
+        url(../images/header-and-hero/girl-tab-2x.png),
+        url(../images/header-and-hero/ellipse-tab-2x.png),
+        url(../images/header-and-hero/16cafes-tab-2x.png),
+        url(../images/header-and-hero/group23-tab-2x.png),
+        url(../images/header-and-hero/milk-tab-2x.png);
+      ;
+      background-repeat: no-repeat;
+      background-position: bottom 0px right 247px,
+        bottom 0px right 34px,
+        bottom 46px right 137px,
+        bottom 261px right 34px,
+        bottom 205px right 34px,
+        bottom 28px right 610px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 665px;
+    background-image: url(../images/header-and-hero/icecream-desk.png),
+      url(../images/header-and-hero/girl-desk.png),
+      url(../images/header-and-hero/ellipse-desk.png),
+      url(../images/header-and-hero/16cafes-desk.png),
+      url(../images/header-and-hero/group23-desk.png),
+      url(../images/header-and-hero/milk-desk.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px right 415px,
+      bottom 0px right 69px,
+      bottom 77px right 228px,
+      bottom 432px right 57px,
+      bottom 341px right 57px,
+      bottom 45px right 975px;
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url(../images/header-and-hero/icecream-desk-2x.png),
+        url(../images/header-and-hero/girl-desk-2x.png),
+        url(../images/header-and-hero/ellipse-desk-2x.png),
+        url(../images/header-and-hero/16cafes-desk-2x.png),
+        url(../images/header-and-hero/group23-desk-2x.png),
+        url(../images/header-and-hero/milk-desk-2x.png);
+      ;
+      background-repeat: no-repeat;
+      background-position: bottom 0px right 415px,
+        bottom 0px right 69px,
+        bottom 77px right 228px,
+        bottom 432px right 57px,
+        bottom 341px right 57px,
+        bottom 45px right 975px;
+    }
+  }
+}
+
+
+.header__bar {
+  @media screen and (min-width: 320px) {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 6px;
+  }
+
+  @media screen and (min-width: 768px){
+    display: flex;
+    align-items: center;
+    padding-top: 38px;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 38px;
+
+    .header__logo {
+      position: absolute;
+      top: 38px;
+      left: -69px;
+    }
+  }
+}
+
+.header__nav-list {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px){
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-family: 'DM Sans';
+    @include font(700, 16px, 21px, 0.04em);
+    display: flex;
+    margin-left: auto;
+    margin-right: 109px;
+
+    .header__nav-item {
+      margin-right: 35px;
+
+      &:last-child {
+        margin-right: 0px;
+      } 
+    }
+
+    .header__nav-link {
+      color: var(--btn-light-bg-color);
+
+      &:hover,
+      &:focus {
+        color: var(--current-color-active-link);
+      }
+    }
+  }
+}
+
+.burger-menu {
+  @media screen and (min-width: 320px){
+    display: block;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 12px;
+    top: 25px;
+    right: 0px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  @media screen and (min-width: 480px){
+    display: block;
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 12px;
+    top: 25px;
+    right: 0px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  @media screen and (min-width: 768px){
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 12px;
+    top: 52px;
+    right: 190px;
+    padding: 0;
+    border: none;
+    background: transparent;
+  }
+
+  @media screen and (min-width: 1200px){
+    display: none;
+  }
+}
+
+.btn-header {
+  @media screen and (min-width: 320px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    @include font(700, 16px, 21px, 0.04em);
+    width: 159px;
+    height: 44px;
+    padding: 11px 37px;
+    border-radius: 22px;
+    text-align: start;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 10px;
+      top: 18px;
+      left: 118px;
+      background-image: url(../images/header-and-hero/vector.png);
+      background-repeat: no-repeat;
+    }
+  }
+  
+  
+
+  @media screen and (min-width: 1200px){
+    @include font(700, 16px, 21px, 0.04em);
+    width: 159px;
+    height: 44px;
+    padding: 11px 37px;
+    border-radius: 22px;
+    text-align: start;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 6px;
+      height: 10px;
+      top: 17px;
+      left: 118px;
+      background-image: url(../images/header-and-hero/vector.png);
+      background-repeat: no-repeat;
+    }
+  }
+  
+}
+
+.hero__theme {
+  @media screen and (min-width: 320px) {
+    width: 218px;
+    font-family: 'Titan One';
+    @include font(400, 26px, 30px, 0.04em);
+    color: var(--btn-light-bg-color);
+    margin-top: 137px;
+    
+    .colorized {
+      font-family: 'Titan One';
+      @include font(400, 48px, 46px, 0.04em);
+      color: var(--btn-dark-bg-color);
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 218px;
+    font-family: 'Titan One';
+    @include font(400, 26px, 30px, 0.04em);
+    color: var(--btn-light-bg-color);
+    margin-top: 137px;
+    
+    .colorized {
+      font-family: 'Titan One';
+      @include font(400, 48px, 46px, 0.04em);
+      color: var(--btn-dark-bg-color);
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    font-family: 'Titan One';
+    @include font(400, 22px, 25px, 0.04em);
+    color: var(--btn-light-bg-color);
+    margin-top: 15px;
+    
+    .colorized {
+      font-family: 'Titan One';
+      @include font(400, 34px, 31px, 0.04em);
+      color: var(--btn-dark-bg-color);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 277px;
+    font-family: 'Titan One';
+    @include font(400, 38px, 44px, 0.04em);
+    color: var(--btn-light-bg-color);
+    margin-top: 84px;
+
+    .colorized {
+      font-family: 'Titan One';
+      @include font(400, 58px, 52px, 0.04em);
+      color: var(--btn-dark-bg-color);
+    }
+  }
+}
+
+.hero__btns {
+  @media screen and (min-width: 320px) {
+    margin-top: 19px;
+    
+    .hero__btn {
+      height: 24px;
+      @include font (400, 8px, 10px, 0.04em);
+      margin-right: 8px;
+      padding: 6px 13px;
+    
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 480px) {
+    margin-top: 19px;
+    
+    .hero__btn {
+      height: 24px;
+      @include font (400, 8px, 10px, 0.04em);
+      margin-right: 8px;
+      padding: 6px 13px;
+    
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-top: 20px;
+    
+    .hero__btn {
+      height: 24px;
+      @include font (400, 8px, 10px, 0.04em);
+      margin-right: 8px;
+      padding: 6px 13px;
+    
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 25px;
+
+    .hero__btn {
+      height: 40px;
+      @include font (400, 14px, 18px, 0.04em);
+      padding: 11px 20px;
+      margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+}
+
+.description {
+  @media screen and (min-width: 320px){
+    display: none;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 114px;
+    margin-top: 66px;
+    margin-left: 120px;
+    
+    .description__text {
+      font-family: 'DM Sans';
+      @include font(400, 8px, 12px, 0.04em);
+      color: var(--btn-light-bg-color);
+    }
+    
+    .description__btn {
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      border: none;
+      margin-top: 7px;
+      padding: 0;
+    }
+  } 
+
+  @media screen and (min-width: 1200px) {
+    width: 200px;
+    margin-top: 112px;
+    margin-left: 180px;
+
+    .description__text {
+      font-family: 'DM Sans';
+      @include font(400, 14px, 20px, 0.04em);
+      color: var(--btn-light-bg-color);
+    }
+
+    .description__btn {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      border: none;
+      margin-top: 20px;
+      padding: 0;
+    }
+  }
+}

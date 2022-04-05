@@ -158,6 +158,8 @@
     content: "";
     background-image: url(../images/products/points-group.png);
     display: block;
+    width: 26px;
+        height: 6px;
 
 }
 
@@ -336,23 +338,36 @@
 .products-details {
     color: var(--white-text-color);
     font-family: 'DM Sans';
-    font-size: 12px;
-    line-height: calc(18 / 14);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(21 / 14);
     text-align: center;
     letter-spacing: 0.04em;
 
     border-radius: 4px;
     padding: .5em .5em 0;
+
+    @media screen and (min-width: 768px) {
+        font-size: 14px;
+        line-height: calc(25 / 14);
+    }
+    
+    @media screen and (min-width: 1200px) {
+        margin-top: 70px;
+        font-size: 16px;
+        line-height: calc(28 / 16);
+    }
 }
 
 .products-details__summary {
     list-style: none;
+margin-top: 30px;
+transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .products-details__summary::before {
     // outline: 1px solid tomato;
     position: relative;
-    margin-top: 30px;
     width: 40px;
     height: 40px;
     left: 50%;
@@ -373,11 +388,14 @@
     }
 }
 
-.products-details[open] {
-    padding: 10px;
+.products-details[open] .products-details__summary{
+transform: rotate(90deg);
+// transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 }
 
 .products-details[open] .products-details__summary {
     // border-bottom: 2px solid #ffffff;
     margin-bottom: 15px;
+    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }

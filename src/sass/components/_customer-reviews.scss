@@ -6,7 +6,7 @@
 
 .slider {
 
-    width: 926px;
+    // width: 926px;
     
     margin-left: auto;
     margin-right: auto;
@@ -21,16 +21,44 @@
 }
 
 .slider__wrapper {
-    width: 926px;
 
-    margin-top: 15px;
+    width: 280px;
 
-    padding-top: 47px;
-    padding-right: 89px;
-    padding-bottom: 39px;
-    padding-left: 87px;
+    padding-top: 43px;
+    padding-bottom: 20px;
+    padding-right: 57px;
+    padding-left: 66px;
+    margin-top: 29px;
+
+    margin-left: auto;
+    margin-right: auto;
 
     background-color: #FAFAFA;
+
+    @media screen and (min-width: 768px) {
+
+        width: 620px;
+
+        padding-top: 47px;
+        padding-bottom: 34px;
+        padding-right: 80px;
+        padding-left: 80px;
+        margin-top: 29px;
+        margin-top: 19px;
+    }
+
+    @media screen and (min-width: 1200px){
+
+        width: 926px;
+
+        margin-top: 15px;
+        
+        padding-top: 47px;
+        padding-right: 89px;
+        padding-bottom: 39px;
+        padding-left: 87px;
+ 
+    }
 
 }
 

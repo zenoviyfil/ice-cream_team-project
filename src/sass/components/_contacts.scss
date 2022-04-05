@@ -1,11 +1,14 @@
 .contacts {
+  padding-bottom: 113px;
   background-image: linear-gradient(#ffffff 84px, #fff5f6 84px);
 
   @include tab {
+    padding-bottom: 158px;
     background-image: linear-gradient(#ffffff 78px, #fff5f6 78px);
   }
 
   @include desk {
+    padding-bottom: 165px;
     background-image: url(../images/contacts/sectionbg.png),
       linear-gradient(#ffffff 102px, #fff5f6 102px);
     background-position: center;

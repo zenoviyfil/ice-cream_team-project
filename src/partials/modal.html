@@ -1,34 +1,124 @@
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
-    <!-- <button class="button modal-close" data-modal-close>
+    <button class="button modal-close" data-modal-close>
       <svg class="modal-close__icon" width="18" height="18">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
-    </button> -->
+    </button>
     <form class="modal-form">
       <p class="modal-form__title">Fill the form</p>
       <ul class="modal-form__list">
         <li class="modal-form__item">
           <label for="user-name" class="modal-form__label"></label>
-          <input type="text" name="user-name" id="user-name" class="modal-form__input" placeholder="Name">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-form__input"
+            placeholder="Name"
+          />
         </li>
         <li class="modal-form__item">
           <label for="user-tel" class="modal-form__label"></label>
-          <input type="tel" name="user-tel" id="user-tel" class="modal-form__input" placeholder="Phone">
+          <input
+            type="tel"
+            name="user-tel"
+            id="user-tel"
+            class="modal-form__input"
+            placeholder="Phone"
+          />
         </li>
         <li class="modal-form__item">
           <label for="user-email" class="modal-form__label"></label>
-          <input type="email" name="user-email" id="user-email" class="modal-form__input" placeholder="Email">
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="modal-form__input"
+            placeholder="Email"
+          />
         </li>
         <li class="modal-form__item">
           <label for="user-company" class="modal-form__label"></label>
-          <input type="text" name="user-company" id="user-company" class="modal-form__input" placeholder="Company">
+          <input
+            type="text"
+            name="user-company"
+            id="user-company"
+            class="modal-form__input"
+            placeholder="Company"
+          />
         </li>
       </ul>
       <label class="modal-form__label modal-form__coment">
         <textarea name="form-coment" class="modal-form__text" placeholder="Comments"></textarea>
       </label>
       <button type="submit" class="btn-light btn-main">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- !modal-map -->
+
+<div class="modal-container is-hidden" id="modal_container">
+  <div class="modal-map is-hidden" id="modal_map">
+    <button class="map-btn-close" id="close" type="button">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 32 32"
+      >
+        <title>exit</title>
+        <path
+          d="M24 20v-4h-10v-4h10v-4l6 6zM22 18v8h-10v6l-12-6v-26h22v10h-2v-8h-16l8 4v18h8v-6z"
+        ></path>
+      </svg>
+    </button>
+    <iframe
+      class="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95027.95079270692!2d-87.73073963626736!3d41.900954320458034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fd3aa32c53105%3A0x843def37653759f4!2sOberweis%20Ice%20Cream%20and%20Dairy%20Store!5e0!3m2!1sru!2sua!4v1649084864235!5m2!1sru!2sua"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
+  </div>
+  <div class="modal-franchise is-hidden" id="modal_franchise">
+    <button class="map-btn-close" type="button" id="closeFranchise">
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        viewBox="0 0 32 32"
+      >
+        <title>cross</title>
+        <path
+          d="M31.708 25.708c-0-0-0-0-0-0l-9.708-9.708 9.708-9.708c0-0 0-0 0-0 0.105-0.105 0.18-0.227 0.229-0.357 0.133-0.356 0.057-0.771-0.229-1.057l-4.586-4.586c-0.286-0.286-0.702-0.361-1.057-0.229-0.13 0.048-0.252 0.124-0.357 0.228 0 0-0 0-0 0l-9.708 9.708-9.708-9.708c-0-0-0-0-0-0-0.105-0.104-0.227-0.18-0.357-0.228-0.356-0.133-0.771-0.057-1.057 0.229l-4.586 4.586c-0.286 0.286-0.361 0.702-0.229 1.057 0.049 0.13 0.124 0.252 0.229 0.357 0 0 0 0 0 0l9.708 9.708-9.708 9.708c-0 0-0 0-0 0-0.104 0.105-0.18 0.227-0.229 0.357-0.133 0.355-0.057 0.771 0.229 1.057l4.586 4.586c0.286 0.286 0.702 0.361 1.057 0.229 0.13-0.049 0.252-0.124 0.357-0.229 0-0 0-0 0-0l9.708-9.708 9.708 9.708c0 0 0 0 0 0 0.105 0.105 0.227 0.18 0.357 0.229 0.356 0.133 0.771 0.057 1.057-0.229l4.586-4.586c0.286-0.286 0.362-0.702 0.229-1.057-0.049-0.13-0.124-0.252-0.229-0.357z"
+        ></path>
+      </svg>
+    </button>
+    <p class="modal-franchise__title">franchice</p>
+    <p class="modal-franchise__text">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam quidem labore dolore tempore
+      deserunt reprehenderit reiciendis iusto praesentium odio esse eos quis sit similique
+      aspernatur, harum, ducimus ipsum tempora alias! Consectetur rem dolore vero! Soluta officiis
+      eligendi laboriosam eaque ut, quos reiciendis minima explicabo earum! Reprehenderit esse
+      obcaecati error praesentium. Voluptates repellat repellendus laborum libero saepe mollitia
+      quidem culpa, quia ex, iure sint! Officiis impedit ex cupiditate quas recusandae, quaerat
+      dolore nemo deleniti architecto soluta ipsa aut voluptatibus repellendus libero, pariatur
+      nihil ducimus, reprehenderit suscipit vel inventore doloribus quibusdam neque quod voluptatum!
+      Quas nemo consectetur sapiente est doloremque culpa placeat.
+    </p>
+    <form autocomplete="off">
+      <p class="form-title">Request a call</p>
+      <div class="subform">
+        <input class="subform__input" type="tel" name="tel" placeholder="Phonenumber" />
+        <button type="reset" class="btn btn--red form-btn">go!</button>
+      </div>
     </form>
   </div>
 </div>

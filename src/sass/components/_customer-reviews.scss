@@ -1,0 +1,101 @@
+
+.review {
+    padding-top: 123px;
+    padding-bottom: 132px;
+}
+
+.slider {
+
+    width: 926px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    text-align: center;
+
+}
+
+.slider__img {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__wrapper {
+    width: 926px;
+
+    margin-top: 15px;
+
+    padding-top: 47px;
+    padding-right: 89px;
+    padding-bottom: 39px;
+    padding-left: 87px;
+
+    background-color: #FAFAFA;
+
+}
+
+.slider__text {
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    
+    color: #000000;
+
+    &::before {
+        content: '';
+    
+        position: absolute;
+    
+        width: 54px;
+        height: 40px;
+        background-repeat: no-repeat;
+        
+        top: 32px;
+        left: 50px;
+    
+        background: url('/images/reviews/dec.png');
+    }
+  
+}
+
+.slider__wrapper{
+    position: relative;
+
+    
+}
+
+.slider__client-data {
+
+    position: relative;
+
+    margin-top: 34px;
+
+    &::before {
+
+        position: absolute;
+
+        z-index: -1;
+
+        content: "";
+
+        width: 32px;
+        height: 4px;
+
+        background-repeat: no-repeat;
+
+        top: -20px;
+        left: 45%;
+        fill: none;
+        top: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        background: url('/images/reviews/point.png');
+    }
+
+}
+
+
+

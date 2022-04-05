@@ -1,5 +1,28 @@
 .about-section {
   background-color: #fff5f6;
+  background-image: url(../images/about/milkdrops-mob.png);
+  background-repeat: no-repeat;
+  background-position: 0 500px;
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/about/milkdrops-mob-2x.png);
+  }
+
+  @include tab {
+    background-image: none;
+  }
+
+  @include desk {
+    background-image: url(../images/about/milkdrops-desk.png);
+    background-repeat: no-repeat;
+    background-position: 0 255px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/about/milkdrops-desk-2x.png);
+    }
+  }
 }
 
 .about-container {

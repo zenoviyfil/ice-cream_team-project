@@ -17,13 +17,13 @@
 }
 
 @mixin tab-max {
-    @media screen and (max-width:1199px) {
+    @media screen and (max-width:1279px) {
         @content;
     }
 }
 
 @mixin desk {
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:1280px) {
         @content;
     }
 }

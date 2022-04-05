@@ -16,7 +16,7 @@
         padding-bottom: 112px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         padding-top: 127px;
         padding-bottom: 119px;
     }
@@ -24,8 +24,9 @@
 
 .products__pre-title {
     font-family: 'Titan One';
-    font-size: 18px;
-    line-height: calc(21 / 18);
+    @include font(400, 18px, 21px, 0.04em);
+    // font-size: 18px;
+    // line-height: calc(21 / 18);
 
     text-align: center;
     text-transform: uppercase;
@@ -33,13 +34,15 @@
     color: var(--pre-title-color);
 
     @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: calc(30 / 26);
+        @include font(400, 26px, 30px, 0.04em);
+        // font-size: 26px;
+        // line-height: calc(30 / 26);
     }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: calc(34 / 30);
+    @media screen and (min-width: 1280px) {
+        @include font(400, 30px, 34px, 0.04em);
+        // font-size: 30px;
+        // line-height: calc(34 / 30);
     }
 
 }
@@ -47,26 +50,28 @@
 .products__title {
     margin-left: auto;
     margin-right: auto;
-
     margin-top: 15px;
-    font-family: 'Titan One';
-    font-size: 34px;
-    line-height: calc(39 / 34);
 
+    font-family: 'Titan One';
+    @include font(400, 34px, 39px, 0.04em);
+    // font-size: 34px;
+    // line-height: calc(39 / 34);
+// letter-spacing: 0.04em;
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: var(--title-color);
 
     @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: calc(55 / 48);
+        @include font(400, 48px, 55px, 0.04em);
+        // font-size: 48px;
+        // line-height: calc(55 / 48);
     }
 
-    @media screen and (min-width: 1200px) {
-        font-size: 58px;
-        line-height: calc(66 / 58);
+    @media screen and (min-width: 1280px) {
+        @include font(400, 58px, 66px, 0.04em);
+        // font-size: 58px;
+        // line-height: calc(66 / 58);
     }
 }
 
@@ -82,7 +87,7 @@
 
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-top: 259px;
     }
 }
@@ -96,7 +101,7 @@
         margin-left: 20px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-left: 24px;
     }
 }
@@ -124,8 +129,8 @@
         padding-right: 11px;
     }
 
-    @media screen and (min-width: 1200px) {
-        width: 329px;
+    @media screen and (min-width: 1280px) {
+        width: 395px;
 
         padding-left: 44px;
         padding-right: 44px;
@@ -135,18 +140,19 @@
 
 .card__title {
     font-family: 'Titan One';
-    font-size: 20px;
-    line-height: calc(23 / 20);
+    @include font(400, 20px, 23px, 0.04em);
+    // font-size: 20px;
+    // line-height: calc(23 / 20);
 
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: var(--white-text-color);
 
-    @media screen and (min-width: 1200px) {
-        font-size: 30px;
-        line-height: calc(34 / 30);
+    @media screen and (min-width: 1280px) {
+        @include font(400, 30px, 34px, 0.04em);
+        // font-size: 30px;
+        // line-height: calc(34 / 30);
     }
 }
 
@@ -202,7 +208,7 @@
         height: 226px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         background-image: url(../images/products/icecream-desk.png);
         top: -210px;
         width: 335px;
@@ -248,7 +254,7 @@
         height: 226px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         background-image: url(../images/products/icecoffee-desk.png);
         top: -210px;
         width: 335px;
@@ -291,7 +297,7 @@
         height: 226px;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         background-image: url(../images/products/milkshakes-desk.png);
         top: -210px;
         width: 335px;
@@ -314,48 +320,55 @@
     margin-right: auto;
 
     font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(21 / 14);
+    @include font(700, 14px, 21px, 0.04em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: calc(21 / 14);
 
     text-align: center;
-    letter-spacing: 0.04em;
 
     color: var(--white-text-color);
 
     @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(25 / 14);
+        @include font(700, 14px, 25px, 0.04em);
+        // font-size: 14px;
+        // line-height: calc(25 / 14);
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-top: 70px;
-        font-size: 16px;
-        line-height: calc(28 / 16);
+
+        @include font(700, 16px, 28px, 0.04em);
+       
+        // font-size: 16px;
+        // line-height: calc(28 / 16);
     }
 }
 
 .products-details {
     color: var(--white-text-color);
     font-family: 'DM Sans';
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(21 / 14);
+    @include font(700, 14px, 21px, 0.04em);
+    // font-weight: 700;
+    // font-size: 14px;
+    // line-height: calc(21 / 14);
     text-align: center;
     letter-spacing: 0.04em;
 
     border-radius: 4px;
-    padding: .5em .5em 0;
+    // padding: .5em .5em 0;
 
     @media screen and (min-width: 768px) {
-        font-size: 14px;
-        line-height: calc(25 / 14);
+        @include font(700, 14px, 25px, 0.04em);
+        // font-size: 14px;
+        // line-height: calc(25 / 14);
     }
     
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1280px) {
         margin-top: 70px;
-        font-size: 16px;
-        line-height: calc(28 / 16);
+        @include font(700, 16px, 28px, 0.04em);
+        // font-size: 16px;
+        // line-height: calc(28 / 16);
     }
 }
 
@@ -363,6 +376,14 @@
     list-style: none;
 margin-top: 30px;
 transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+@media screen and (min-width: 768px) {
+    margin-top: 40px;
+}
+
+@media screen and (min-width: 1280px) {
+    margin-top: 62px;
+}
 }
 
 .products-details__summary::before {
@@ -390,12 +411,9 @@ transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .products-details[open] .products-details__summary{
 transform: rotate(90deg);
-// transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
    
 }
 
 .products-details[open] .products-details__summary {
-    // border-bottom: 2px solid #ffffff;
     margin-bottom: 15px;
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }

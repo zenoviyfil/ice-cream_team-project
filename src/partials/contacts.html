@@ -3,8 +3,9 @@
     <h2 class="visually-hidden">Our contacts</h2>
     <ul class="contacts__list">
       <li class="contacts__item">
-        <p><span class="contacts__title">cafe</span></p>
+        <!-- <p><span class="contacts__title">cafe</span></p> -->
         <div class="contacts__adress">
+          <p class="contacts__title-margin"><span class="contacts__title">cafe</span></p>
           <p class="contacts__city">Chicago</p>
           <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         </div>
@@ -24,8 +25,10 @@
         </div>
       </li>
       <li class="contacts__item">
-        <p><span class="contacts__title contacts__title--green">food truck</span></p>
         <div class="contacts__adress">
+          <p class="contacts__title-margin">
+            <span class="contacts__title contacts__title--green">food truck</span>
+          </p>
           <p class="contacts__city">Los Angeles</p>
           <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         </div>
@@ -45,8 +48,8 @@
         </div>
       </li>
       <li class="contacts__item">
-        <p><span class="contacts__title">cafe</span></p>
         <div class="contacts__adress">
+          <p class="contacts__title-margin"><span class="contacts__title">cafe</span></p>
           <p class="contacts__city">New York</p>
           <p class="contacts__text">Fusce ut velit laoreet, tempus arcu molestie vulputate</p>
         </div>
@@ -70,28 +73,16 @@
       <li class="btn-list__item">
         <button type="button" class="btn btn--red" id="open">
           Our Locations
-          <svg class="btn-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10">
-            <path
-              d="m1.616 1 4.428 4-4.428 4"
-              stroke="#fff"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg class="vector vector--white">
+            <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
       </li>
       <li class="btn-list__item">
         <button type="button" class="btn btn--white" id="openFranchise">
           Franchise
-          <svg class="btn-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10">
-            <path
-              d="m1.616 1 4.428 4-4.428 4"
-              stroke="#d41443"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
+          <svg class="vector vector--red">
+            <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
       </li>

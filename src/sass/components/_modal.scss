@@ -199,3 +199,34 @@
     }
   }
 }
+
+.modal-about {
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff5f6;
+  max-width: 650px;
+  width: 100%;
+  min-height: 450px;
+  border-radius: 10px;
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: justify;
+  }
+}
+
+.modal-about__btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+.modal-about__icon {
+  fill: #d41443;
+}

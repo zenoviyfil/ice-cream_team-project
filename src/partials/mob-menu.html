@@ -1,28 +1,39 @@
 <header class="header">
-    <div class="mob-menu__container">
-        <button type="button" class="btn--white mob-menu__btn" data-model-open>
-            Franchise
-            <svg class="btn-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10">
-                <path d="m1.616 1 4.428 4-4.428 4" stroke="#d41443" stroke-width="2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-            </svg>
-        </button>
-        <ul class="mob-menu__list">
-            <li class="mob-menu__item">
-                <a href="index.html" class="mob-menu__link link current">Home</a>
-            </li>
-            <li class="mob-menu__item">
-                <a href="#advantages" class="mob-menu__link link">About us</a>
-            </li>
-            <li class="mob-menu__item">
-                <a href="#about" class="mob-menu__link link">How it’s made?</a>
-            </li>
-            <li class="mob-menu__item">
-                <a href="#products" class="mob-menu__link link">Our products</a>
-            </li>
-            <li class="mob-menu__item">
-                <a href="#contact" class="mob-menu__link link">Contact</a>
-            </li>
-        </ul>
-    </div>
+  <div class="mob-menu__container" id="mob-menu__container" data-menu>
+    <button
+      type="button"
+      class="btn--white mob-menu__btn"
+      aria-expanded="true"
+      aria-controls="mob-menu__container"
+      data-menu-button
+    >
+      Franchise
+      <svg class="btn-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10">
+        <path
+          d="m1.616 1 4.428 4-4.428 4"
+          stroke="#d41443"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <ul class="mob-menu__list">
+      <li class="mob-menu__item">
+        <a href="index.html" class="mob-menu__link link current">Home</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#advantages" class="mob-menu__link link">About us</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#about" class="mob-menu__link link">How it’s made?</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#products" class="mob-menu__link link">Our products</a>
+      </li>
+      <li class="mob-menu__item">
+        <a href="#contact" class="mob-menu__link link">Contact</a>
+      </li>
+    </ul>
+  </div>
 </header>

@@ -19,10 +19,16 @@
           <a class="header__nav-link link" href="#contact">Contact</a>
         </li>
       </ul>
-      <button class="burger-menu" type="button">
+      <button
+        class="burger-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="mob-menu__container"
+        data-menu-button
+      >
         <img src="./images/header-and-hero/burger.png" alt="burger-icon" />
       </button>
-      <button class="btn-header btn-light" type="button" data-open-modal>Buy now</button>
+      <button class="btn-header btn-light" type="button" data-modal-open>Buy now</button>
     </div>
     <div class="hero__container">
       <h1 class="hero__theme">
@@ -30,8 +36,12 @@
         <span class="colorized">passion</span>
       </h1>
       <div class="hero__btns">
-        <a href="#products" class="hero__btn btn-main btn-dark" type="button">Products</a>
-        <a href="#howitsmade" class="hero__btn btn-main btn-light" type="button">How it’s made?</a>
+        <button class="hero__btn btn-main btn-dark" type="button">
+          <a class="hero__btn-link" href="#products">Products</a>
+        </button>
+        <button class="hero__btn btn-main btn-light" type="button">
+          <a class="hero__btn-link" href="#howitsmade">How it’s made?</a>
+        </button>
       </div>
       <div class="description">
         <p class="description__text">

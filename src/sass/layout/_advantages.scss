@@ -15,10 +15,12 @@
 
 .advantages-list {
     list-style: none;
+    width: 230px;
 
     @include tab {
         display: flex;
         margin-right: 165px;
+        width: auto;
     }
 
     @include desk {
@@ -124,7 +126,6 @@
 
 .advantages-list__text{
     margin-top: 0;
-    margin-right: 70px;
 
     font-family: 'DM Sans';
     font-weight: 700;

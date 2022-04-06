@@ -111,6 +111,30 @@
     max-width: 463px;
     margin-left: 139px;
   }
+
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(100%, 0);
+  opacity: 0;
+  
+    &.element-show {
+      transform: translate(0);
+      opacity: 1;
+    }
+}
+
+.about__picture {
+  @include desk {
+    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translate(-100%, 0);
+    opacity: 0;
+  }
+
+  &.element-show {
+    transform: translate(0);
+    opacity: 1;
+  }
 }
 
 .about__img {

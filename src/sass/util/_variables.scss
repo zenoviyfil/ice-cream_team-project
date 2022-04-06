@@ -1,11 +1,15 @@
 :root {
-  --current-color-active-link:#D41443;
+  --current-color-active-link: #d41443;
   --btn-dark-color: #ffffff;
   --btn-dark-bg-color: #d41443;
   --btn-light-color: #d41443;
   --btn-light-bg-color: #ffffff;
   --btn-dark-hover-bg-color: #c7133e;
   --btn-light-hover-bg-color: #ecebeb;
+  --title-dark-color: #c7133e;
+  --title-light-color: #ffa5ba;
+  --title-white-color: #ffffff;
+  --accent-color: #c7133e;
 }
 
 p,
@@ -29,12 +33,12 @@ img {
 .link {
   text-decoration: none;
 }
-body{
+body {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
-.current{
+.current {
   color: var(--current-color-active-link);
 }
 
@@ -43,17 +47,17 @@ body{
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
-  
+
   @media screen and (min-width: 768px) {
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     width: 1280px;
     padding-left: 15px;

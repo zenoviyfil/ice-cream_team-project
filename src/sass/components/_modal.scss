@@ -148,6 +148,11 @@
   min-height: 450px;
   border-radius: 10px;
 
+  @media screen and (max-width: 450px) {
+    // margin-top: 100px;
+    top: 70%;
+  }
+
   &__title {
     font-family: 'Titan One';
     font-style: normal;

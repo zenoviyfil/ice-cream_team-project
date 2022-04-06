@@ -127,6 +127,7 @@
     @include tab {
       font-size: 14px;
       line-height: 166%;
+      max-width: 100%;
     }
 
     @include desk {

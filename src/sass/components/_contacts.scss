@@ -50,6 +50,13 @@
     background: #ffffff;
     box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
     border-radius: 24px;
+    transition: box-shadow 500ms linear, transform 500ms linear;
+    
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 40px rgba(212, 20, 67, 0.5);
+      transform: scale(1.03);
+    }
 
     @include tab {
       gap: 32px;

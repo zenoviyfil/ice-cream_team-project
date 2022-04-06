@@ -430,7 +430,16 @@
 }
 
 .hero__btn-link {
+  padding: 6px 10px;
   text-decoration: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font (400, 8px, 10px, 0);
+  @include desk {
+    @include font (400, 14px, 18px, 0);
+    padding: 10px 13px;
+  }
+
 }
 
 .btn-light {

@@ -98,7 +98,10 @@
 .footer__contact-wrap {
   display: flex;
   justify-content: flex-end;
+  @include font (700, 12px, 22px, 0);
+text-align: right;
 
+color: #000000;
   @media screen and (max-width: 767px) {
     margin-bottom: 46px;
   }

@@ -111,22 +111,15 @@
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow: hidden;
-  // opacity: 0;
-  // pointer-events: none;
+  overflow-y: auto;
 }
-
-// .modal-container.show {
-//   opacity: 1;
-//   pointer-events: auto;
-// }
 
 .modal-map {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid tomato;
+  border: 1px solid tomato;
 }
 
 .map-btn-close {
@@ -150,8 +143,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #fff5f6;
-  width: 650px;
-  height: 450px;
+  max-width: 650px;
+  width: 100%;
+  min-height: 450px;
   border-radius: 10px;
 
   &__title {
@@ -168,9 +162,6 @@
   }
 
   &__text {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     text-align: justify;
@@ -200,7 +191,8 @@
     border-bottom: 1px solid tomato;
     background-color: transparent;
     outline: none;
-    padding-left: 10px;
+    max-width: 180px;
+    width: 100%;
 
     &::placeholder {
       color: #d41443;

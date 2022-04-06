@@ -1,25 +1,25 @@
 .contacts {
-  padding-bottom: 113px;
-  background-image: linear-gradient(#ffffff 84px, #fff5f6 84px);
+  padding-bottom: 48px;
+  background-image: linear-gradient(#ffffff 327px, #fff5f6 327px);
 
   @include tab {
-    padding-bottom: 158px;
-    background-image: linear-gradient(#ffffff 78px, #fff5f6 78px);
+    padding-bottom: 40px;
+    background-image: linear-gradient(#ffffff 126px, #fff5f6 126px);
   }
 
   @include desk {
-    padding-bottom: 165px;
+    padding-bottom: 120px;
     background-image: url(../images/contacts/sectionbg.png),
-      linear-gradient(#ffffff 102px, #fff5f6 102px);
+      linear-gradient(#ffffff 101px, #fff5f6 101px);
     background-position: center;
-    background-size: 1900px, 10000px;
+    background-size: 1940px, 10000px;
     background-repeat: no-repeat, no-repeat;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(../images/contacts/sectionbg2x.png),
-        linear-gradient(#ffffff 102px, #fff5f6 102px);
+        linear-gradient(#ffffff 101px, #fff5f6 101px);
       background-position: center;
-      background-size: 1900px, 10000px;
+      background-size: 1940px, 10000px;
       background-repeat: no-repeat, no-repeat;
     }
   }
@@ -32,11 +32,7 @@
     gap: 20px;
 
     @include tab {
-      // gap: 20px;
-    }
-
-    @include desk {
-      gap: 30px;
+      gap: 32px;
     }
   }
 
@@ -46,10 +42,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 25px;
-    padding: 43px 20px;
-    // width: calc((100% - 60px) / 3);
-    width: 220px;
+    gap: 24px;
+    padding: 40px 32px;
+    width: 100%;
     margin: 0 auto;
 
     background: #ffffff;
@@ -57,29 +52,30 @@
     border-radius: 24px;
 
     @include tab {
-      padding: 50px 31px;
-      gap: 30px;
-      width: calc((100% - 40px) / 3);
+      gap: 32px;
+      width: calc((100% - 64px) / 3);
     }
 
     @include desk {
-      padding: 51px 43px 62px 43px;
-      gap: 32px;
-      width: calc((100% - 60px) / 3);
+      padding: 40px;
+    }
+  }
+
+  &__title-margin {
+    margin-bottom: 20px;
+
+    @include tab {
+      margin-bottom: 32px;
     }
   }
 
   // .contacts__title
 
   &__title {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     text-align: center;
     letter-spacing: 0.04em;
-    // padding: 4px 17px;
     text-transform: uppercase;
     padding: 0 24px;
 
@@ -100,35 +96,31 @@
   // .contacts__city
 
   &__city {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     letter-spacing: 0.04em;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     color: #000000;
 
     @include tab {
       font-size: 14px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
     }
 
     @include desk {
       font-size: 16px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
   }
 
   // .contacts__text
 
   &__text {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 150%;
+    width: 100%;
+    max-width: calc(100% - 20px);
 
     color: #907e82;
 
@@ -150,18 +142,11 @@
     &::after {
       content: '';
       display: block;
-      margin-top: 25px;
+      margin-top: 24px;
       height: 1px;
-      // width: 234px;
       background-color: #e1e1e1;
 
       @include tab {
-        width: 153px;
-        margin-top: 30px;
-      }
-
-      @include desk {
-        width: 234px;
         margin-top: 32px;
       }
     }
@@ -169,18 +154,11 @@
     &::before {
       content: '';
       display: block;
-      margin-bottom: 25px;
+      margin-bottom: 24px;
       height: 1px;
-      // width: 234px;
       background-color: #e1e1e1;
 
       @include tab {
-        width: 153px;
-        margin-bottom: 30px;
-      }
-
-      @include desk {
-        width: 234px;
         margin-bottom: 32px;
       }
     }
@@ -189,26 +167,18 @@
   // .contacts__work-time-margins
 
   &__work-time-margins:not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 
     @include tab {
-      margin-bottom: 16px;
-    }
-
-    @include desk {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
     }
   }
 
   // .contacts__work-time-days
 
   &__work-time-days {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 186%;
-    // letter-spacing: 0.04em;
 
     color: #000000;
 
@@ -225,9 +195,6 @@
   // .contacts__work-time-hours
 
   &__work-time-hours {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 186%;
     color: #ffa5ba;
@@ -241,13 +208,15 @@
     }
   }
 
+  &__links {
+    display: flex;
+    flex-direction: column;
+  }
+
   // .contacts__links-tel
 
   &__links-tel,
   &__links-mail {
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
     font-size: 12px;
     line-height: 150%;
     color: #907e82;

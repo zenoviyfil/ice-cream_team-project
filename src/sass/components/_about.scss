@@ -112,8 +112,8 @@
     margin-left: 139px;
   }
 
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-  transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform 1200ms cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate(100%, 0);
   opacity: 0;
   
@@ -125,8 +125,8 @@
 
 .about__picture {
   @include desk {
-    transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 1200ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 1200ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-100%, 0);
     opacity: 0;
   }

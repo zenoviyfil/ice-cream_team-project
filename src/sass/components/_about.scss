@@ -67,9 +67,7 @@
 
 .about__wrap {
   @include tab {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-center;
   }
 }
 
@@ -116,6 +114,26 @@
 }
 
 .about-section__description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #907e82;
+
+  margin-bottom: 20px;
+
+  @include tab {
+    font-size: 14px;
+    line-height: 1.76;
+    letter-spacing: 0.04em;
+  }
+
+  @include desk {
+    line-height: 1.94;
+    margin-bottom: 40px;
+  }
+}
+
+.about-section__conclusion {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;

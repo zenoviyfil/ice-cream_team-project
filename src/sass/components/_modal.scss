@@ -40,6 +40,12 @@
   background-color: transparent;
   fill: var(--accent-color);
   border: 1px solid var(--accent-color);
+  transition: background-color 250ms linear;
+
+  &:focus,
+  &:hover {
+    background-color: #e17992;
+  }
 }
 
 .modal-form__list {

@@ -389,12 +389,11 @@
   text-decoration: none;
   font-family: 'DM Sans';
   font-style: normal;
-  @include font (400, 8px, 10px, 0);
+  @include font(400, 8px, 10px, 0);
   @include desk {
-    @include font (400, 14px, 18px, 0);
+    @include font(400, 14px, 18px, 0);
     padding: 10px 13px;
   }
-
 }
 
 .btn-light {
@@ -520,12 +519,13 @@
 .mob-menu__link.current {
   color: #d41443;
 }
-.mob-btn-close {
+.mob-menu-close {
   position: absolute;
   top: 10px;
   right: 10px;
   border: none;
   background-color: transparent;
+  fill: #ffffff;
   font-size: 20px;
 }
 

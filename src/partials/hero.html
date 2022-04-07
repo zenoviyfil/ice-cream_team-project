@@ -19,13 +19,7 @@
           <a class="header__nav-link link" href="#contact">Contact</a>
         </li>
       </ul>
-      <button
-        class="burger-menu"
-        type="button"
-        aria-expanded="false"
-        aria-controls="mob-menu__container"
-        data-menu-button
-      >
+      <button class="burger-menu" type="button">
         <img src="./images/header-and-hero/burger.png" alt="burger-icon" />
       </button>
       <button class="btn-header btn-light" type="button" data-modal-open>Buy now</button>
@@ -61,16 +55,13 @@
     </div>
   <!-- </header>
   <header class="header"> -->
-    <div class="mob-menu__container" id="mob-menu__container" data-menu>
-          <button class="button modal-close" aria-expanded="true"
-        aria-controls="mob-menu__container"
-        data-menu-button>
+    <div class="mob-menu__container">
+          <button class="button mob-menu-close">
             <svg class="modal-close__icon" width="18" height="18">
-              <use href="./images/icons.svg#icon-close"></use>
+              <use href="./images/icons.svg#icon-close-modal"></use>
             </svg>
           </button>
-      <button type="button" class="btn--white mob-menu__btn" aria-expanded="true" aria-controls="mob-menu__container"
-        >
+      <button type="button" class="btn--white mob-menu__btn" data-modal-open>
         Buy now
         <svg class="btn-svg" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10">
           <path d="m1.616 1 4.428 4-4.428 4" stroke="#d41443" stroke-width="2" stroke-linecap="round"

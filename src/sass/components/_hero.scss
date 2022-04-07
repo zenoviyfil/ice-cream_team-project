@@ -149,7 +149,7 @@
 
     .header__nav-link {
       color: var(--btn-light-bg-color);
-
+      
       &:hover,
       &:focus {
         color: var(--current-color-active-link);
@@ -158,6 +158,16 @@
     .current {
       color: var(--current-color-active-link);
     }
+  }
+}
+
+.header__nav-item {
+  transition: transform 250ms linear;
+  transform: scale(1);
+  
+  &:hover,
+  &:focus {
+    transform: scale(1.04);
   }
 }
 

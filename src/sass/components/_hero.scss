@@ -184,6 +184,10 @@
     border: none;
     background: transparent;
   }
+    &:focus,
+    &:hover {
+      background-color: #ffa5ba;
+    }
 
   @media screen and (min-width: 480px) {
     display: block;
@@ -523,18 +527,24 @@
 // }
 
 .mob-menu__container {
-  display: none;
   position: absolute;
   top: 0;
   right: 0;
+  transform: translateX(120%);
+  transition: transform 250ms linear;
   width: 250px;
-  height: 502px;
+  height: 100vh;
 
   background-color: #e17992;
 
+  box-shadow: -8px 0 20px rgba(0, 0, 0, 0.25);
+    
+    &.is-open {
+      transform: translateX(0);
+    }
+
   @media screen and (min-width: 768px) {
     width: 254px;
-    height: 1020px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -586,6 +596,10 @@
   background-color: transparent;
   fill: #ffffff;
   font-size: 20px;
+    &:focus,
+    &:hover {
+      fill: var(--accent-color);
+    }
 }
 
 .our-network {
